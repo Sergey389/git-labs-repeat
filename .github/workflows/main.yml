@@ -16,9 +16,7 @@ jobs:
           python-version: '3.12'
 
       - name: Run unit tests
-        run: |
-          sleep 180
-          python -B -m unittest discover -p "test_*.py"
+        run: python -B -m unittest discover -p "test_*.py"
 
       - name: Generate HTML documentation
         run: python -B -m pydoc -w operations
