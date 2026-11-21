@@ -13,3 +13,19 @@
 | git recent | git log --oneline -n 5 |
 
 Aliases simplify frequently used Git commands.
+
+## CI/CD Laboratory Work 2
+
+This Python project demonstrates basic arithmetic operations.
+
+### Supported operations
+- Addition
+- Subtraction
+- Multiplication
+
+### Running tests
+python -B -m unittest discover -p "test_*.py"
+
+### CI/CD
+GitHub Actions automatically runs unit tests on push and pull requests.
+HTML API documentation is generated using pydoc.

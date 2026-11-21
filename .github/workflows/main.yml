@@ -20,3 +20,11 @@ jobs:
           sleep 180
           python -B -m unittest discover -p "test_*.py"
 
+      - name: Generate HTML documentation
+        run: python -B -m pydoc -w operations
+
+      - name: Upload documentation
+        uses: actions/upload-artifact@v4
+        with:
+          name: python-api-docs
+          path: operations.html
