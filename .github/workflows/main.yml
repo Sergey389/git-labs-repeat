@@ -16,4 +16,6 @@ jobs:
           python-version: '3.12'
 
       - name: Run unit tests
-        run: python -B -m unittest discover -p "test_*.py"
+        run: |
+          sleep 180
+          python -B -m unittest discover -p "test_*.py"
